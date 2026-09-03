@@ -1,0 +1,42 @@
+baseURL = 'https://smilex-blog.pages.dev/'
+languageCode = 'zh-cn'
+title = 'Smilex 的技术博客'
+theme = 'PaperMod'
+enableRobotsTXT = true
+defaultContentLanguage = 'zh-cn'
+paginate = 10
+summaryLength = 80
+
+[params]
+  description = 'AI 与前端(Web)开发的技术笔记与深度文章'
+  author = 'Smilex'
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowToc = true
+  socialIcons = []
+
+  [params.homeInfoParams]
+    Title = 'Smilex 的技术博客'
+    Content = 'AI 与前端(Web)开发:端侧推理、多智能体、模型实测与工程实践。'
+
+[[menu.main]]
+  identifier = 'posts'
+  name = '文章'
+  url = '/posts/'
+  weight = 10
+
+[[menu.main]]
+  identifier = 'tags'
+  name = '标签'
+  url = '/tags/'
+  weight = 20
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']
